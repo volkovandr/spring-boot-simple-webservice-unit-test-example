@@ -1,12 +1,17 @@
 package org.sample.SBExample.service;
 
+import org.sample.SBExample.Application;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CounterService {
 
+    private static final Logger logger = LoggerFactory.getLogger(Application.class);
+
     CounterService() {
-        System.out.println("Hello! I'm the CounterService and I'm starting now!");
+        logger.info("CounterService started");
         count = 0;
     }
 
