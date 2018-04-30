@@ -9,6 +9,7 @@ public class HelloService {
     HelloService() {
         System.out.println("I'm HelloService and I'm starting!!!");
     }
+
     @Value("${name:unknown}")
     private String name;
 
