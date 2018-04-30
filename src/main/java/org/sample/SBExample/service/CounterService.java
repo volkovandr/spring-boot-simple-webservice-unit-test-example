@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CounterService {
 
-    private static final Logger logger = LoggerFactory.getLogger(Application.class);
+    private static final Logger logger = LoggerFactory.getLogger(CounterService.class);
 
     CounterService() {
         logger.info("CounterService started");

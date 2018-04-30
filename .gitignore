@@ -1,7 +1,3 @@
-build
-out
-classes
-.gradle
-.nb-gradle
 .idea
-*.iml
+.gradle
+build

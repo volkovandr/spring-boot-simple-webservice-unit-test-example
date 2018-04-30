@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/counter")
 public class CounterController {
 
-    private static final Logger logger = LoggerFactory.getLogger(Application.class);
+    private static final Logger logger = LoggerFactory.getLogger(CounterController.class);
 
     CounterController(CounterService counterService) {
         logger.info("CounterController started");

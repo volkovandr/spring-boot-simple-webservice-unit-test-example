@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class HelloService {
 
-    private static final Logger logger = LoggerFactory.getLogger(Application.class);
+    private static final Logger logger = LoggerFactory.getLogger(HelloService.class);
 
     HelloService() {
         logger.info("HelloService started");
