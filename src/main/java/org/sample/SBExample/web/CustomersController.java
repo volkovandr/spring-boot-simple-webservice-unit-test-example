@@ -18,14 +18,14 @@ public class CustomersController {
 
     private CustomerService customerService;
 
-    @RequestMapping("/")
+    @RequestMapping("")
     public List<Customer> getAll() {
         List<Customer> customers = new ArrayList<Customer>();
         customerService.getCustomers().forEach(customers::add);
         return customers;
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @RequestMapping(value = "", method = RequestMethod.POST)
     public String post(@RequestBody Customer json) {
         customerService.newCustomer(json.getFirstName(), json.getLastName());
         return "OK";
